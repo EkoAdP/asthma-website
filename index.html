@@ -35,31 +35,31 @@
             
             <div class="intro-card">
                 <div class="intro-content">
-                    <p class="lead">Did you know that over 300 million people worldwide have asthma? That's about 1 in every 13 people!</p>
+                    <p class="lead">Did you know over 300 million people worldwide have asthma? That's about 1 in every 13 people!</p>
                     
                     <div class="highlight-box">
-                        <h3>🤔 Quick Question:</h3>
-                        <p>Have you ever breathed through a straw? Try it for 30 seconds. That's what it can feel like during an asthma attack!</p>
+                        <h3>🤔 Quick Activity:</h3>
+                        <p>Try breathing through a straw for 30 seconds. That's what an asthma attack can feel like!</p>
                     </div>
 
                     <h3>What Is Asthma?</h3>
-                    <p>Asthma is a chronic (long-lasting) condition that affects your <strong>airways</strong> – the tubes that carry air in and out of your lungs. During an asthma attack, these airways become:</p>
+                    <p>Asthma is a long-lasting condition that affects your <strong>airways</strong>. Airways are like tubes that carry air in and out of your lungs. Think of them like straws - when they're wide open, air flows easily. During an asthma attack, these airways become:</p>
                     
                     <div class="feature-grid">
                         <div class="feature-card">
                             <div class="icon">😤</div>
                             <h4>Swollen</h4>
-                            <p>The airway walls become inflamed and puffy</p>
+                            <p>The airway walls get red and puffy, like a sprained ankle</p>
                         </div>
                         <div class="feature-card">
                             <div class="icon">💪</div>
                             <h4>Tight</h4>
-                            <p>Muscles around airways squeeze and constrict</p>
+                            <p>Muscles around airways squeeze tight like a fist</p>
                         </div>
                         <div class="feature-card">
                             <div class="icon">🫧</div>
-                            <h4>Mucus-Filled</h4>
-                            <p>Extra sticky mucus clogs the airways</p>
+                            <h4>Filled with Sticky Liquid</h4>
+                            <p>Extra slippery fluid clogs the airways like thick honey</p>
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="info-box">
-                        <p><strong>Good News!</strong> With proper treatment and understanding, people with asthma can live active, healthy lives. Let's explore what happens inside your body at the cellular level!</p>
+                        <p><strong>Good News!</strong> With proper care and the right medicine, people with asthma can run, play sports, and do everything their friends do. Let's explore what happens inside your body at the cell level!</p>
                     </div>
                 </div>
             </div>
@@ -91,13 +91,13 @@
             <div class="content-grid">
                 <div class="content-main">
                     <h3>Building Blocks of Life</h3>
-                    <p>Your body is like a massive LEGO structure made of trillions of tiny pieces called <strong>cells</strong>. Just like how LEGO bricks connect to build something amazing, cells work together to build YOU!</p>
+                    <p>Your body is like a massive LEGO structure. It's made of trillions of tiny pieces called <strong>cells</strong>. Just like LEGO bricks snap together to build something awesome, cells work together to build YOU!</p>
 
                     <div class="hierarchy-diagram">
                         <div class="hierarchy-item">
                             <div class="hierarchy-icon">🔬</div>
                             <h4>Cells</h4>
-                            <p>Smallest unit of life</p>
+                            <p>Tiniest living unit</p>
                         </div>
                         <div class="arrow">→</div>
                         <div class="hierarchy-item">
@@ -119,37 +119,128 @@
                         </div>
                     </div>
 
-                    <h3>Interactive Cell Explorer</h3>
-                    <p>Click on each part of the cell to learn what it does!</p>
-                    
-                    <div class="interactive-cell" id="cell-diagram">
-                        <svg viewBox="0 0 400 300" class="cell-svg">
-                            <!-- Cell Membrane -->
-                            <ellipse cx="200" cy="150" rx="180" ry="130" class="cell-part" id="membrane" fill="#FFE5B4" stroke="#FF8C00" stroke-width="4"/>
-                            
-                            <!-- Cytoplasm -->
-                            <ellipse cx="200" cy="150" rx="175" ry="125" fill="#FFF8DC" opacity="0.8"/>
-                            
-                            <!-- Nucleus -->
-                            <circle cx="200" cy="150" r="50" class="cell-part" id="nucleus" fill="#9370DB" stroke="#4B0082" stroke-width="3"/>
-                            <circle cx="200" cy="150" r="15" fill="#4B0082"/>
-                            
-                            <!-- Mitochondria -->
-                            <ellipse cx="120" cy="100" rx="30" ry="20" class="cell-part" id="mitochondria1" fill="#FF6B6B" stroke="#8B0000" stroke-width="2"/>
-                            <path d="M 105 100 Q 120 95, 135 100" stroke="#8B0000" fill="none" stroke-width="1.5"/>
-                            <path d="M 105 105 Q 120 100, 135 105" stroke="#8B0000" fill="none" stroke-width="1.5"/>
-                            
-                            <ellipse cx="280" cy="180" rx="30" ry="20" class="cell-part" id="mitochondria2" fill="#FF6B6B" stroke="#8B0000" stroke-width="2"/>
-                            <path d="M 265 180 Q 280 175, 295 180" stroke="#8B0000" fill="none" stroke-width="1.5"/>
-                            <path d="M 265 185 Q 280 180, 295 185" stroke="#8B0000" fill="none" stroke-width="1.5"/>
-                            
-                            <!-- Labels -->
-                            <text x="200" y="20" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Click the parts!</text>
-                        </svg>
+                    <!-- Enhanced Interactive Cell Explorer -->
+                    <div class="enhanced-cell-explorer">
+                        <h3>🔬 Interactive Cell Explorer</h3>
+                        <p>Explore the amazing parts of a cell! Each organelle has a special job - click to discover what they do and how they're affected during asthma.</p>
                         
-                        <div class="cell-info-panel" id="cell-info">
-                            <h4>👆 Click on a cell part to learn about it!</h4>
-                            <p>Each part of the cell has a special job. Explore to discover what they do!</p>
+                        <div class="cell-explorer-container">
+                            <!-- Left: Interactive Cell Diagram -->
+                            <div class="cell-diagram-area">
+                                <svg id="interactive-cell-svg" viewBox="0 0 550 470" class="cell-explorer-svg">
+                                    <!-- Cell Membrane (outer boundary) -->
+                                    <g id="membrane-group" class="cell-organelle" data-organelle="membrane">
+                                        <ellipse cx="275" cy="235" rx="220" ry="180" fill="none" stroke="#0891B2" stroke-width="8" stroke-dasharray="15,5"/>
+                                        <ellipse cx="275" cy="235" rx="215" ry="175" fill="#E0F2F1" opacity="0.3"/>
+                                        <!-- Label -->
+                                        <line x1="470" y1="150" x2="490" y2="120" stroke="#0891B2" stroke-width="2"/>
+                                        <text x="445" y="108" font-size="12" fill="#0891B2" font-weight="bold">Cell Membrane</text>
+                                        <text x="455" y="120" font-size="10" fill="#0891B2">(outer boundary)</text>
+                                    </g>
+                                    
+                                    <!-- Cytoplasm (cell filling) -->
+                                    <g id="cytoplasm-group" class="cell-organelle" data-organelle="cytoplasm">
+                                        <ellipse cx="275" cy="235" rx="210" ry="170" fill="#B2EBF2" opacity="0.4"/>
+                                        <!-- Small dots representing cytoplasm particles -->
+                                        <circle cx="120" cy="130" r="3" fill="#0891B2" opacity="0.5"/>
+                                        <circle cx="165" cy="100" r="2" fill="#0891B2" opacity="0.5"/>
+                                        <circle cx="195" cy="360" r="3" fill="#0891B2" opacity="0.5"/>
+                                        <circle cx="340" cy="120" r="2" fill="#0891B2" opacity="0.5"/>
+                                        <circle cx="390" cy="290" r="3" fill="#0891B2" opacity="0.5"/>
+                                        <circle cx="145" cy="310" r="2" fill="#0891B2" opacity="0.5"/>
+                                        <!-- Label (moved to top left) -->
+                                        <line x1="110" y1="95" x2="80" y2="50" stroke="#0891B2" stroke-width="2"/>
+                                        <text x="10" y="48" font-size="13" fill="#0891B2" font-weight="bold">Cytoplasm</text>
+                                        <text x="10" y="62" font-size="11" fill="#0891B2">(jelly-like fluid)</text>
+                                    </g>
+                                    
+                                    <!-- Nucleus (control center) -->
+                                    <g id="nucleus-group" class="cell-organelle" data-organelle="nucleus">
+                                        <circle cx="275" cy="235" r="70" fill="#9C27B0" opacity="0.7" stroke="#6A1B9A" stroke-width="4"/>
+                                        <!-- Nuclear membrane -->
+                                        <circle cx="275" cy="235" r="70" fill="none" stroke="#4A148C" stroke-width="2" stroke-dasharray="5,3"/>
+                                        <!-- Nucleolus (dark spot inside) -->
+                                        <circle cx="285" cy="225" r="20" fill="#4A148C" opacity="0.8"/>
+                                        <!-- Chromatin (DNA strands) -->
+                                        <path d="M 245 220 Q 260 215, 270 220 T 295 220" stroke="#6A1B9A" stroke-width="2" fill="none"/>
+                                        <path d="M 250 250 Q 265 245, 275 250 T 300 250" stroke="#6A1B9A" stroke-width="2" fill="none"/>
+                                        <!-- Label -->
+                                        <line x1="275" y1="165" x2="275" y2="130" stroke="#9C27B0" stroke-width="2"/>
+                                        <text x="275" y="118" text-anchor="middle" font-size="14" fill="#9C27B0" font-weight="bold">Nucleus</text>
+                                        <text x="275" y="105" text-anchor="middle" font-size="11" fill="#9C27B0">(control center)</text>
+                                    </g>
+                                    
+                                    <!-- Mitochondria (powerhouses) - 4 of them -->
+                                    <g id="mito1-group" class="cell-organelle" data-organelle="mitochondria">
+                                        <ellipse cx="160" cy="160" rx="38" ry="24" fill="#F44336" opacity="0.8" stroke="#B71C1C" stroke-width="3"/>
+                                        <!-- Inner cristae (folds) -->
+                                        <path d="M 135 160 Q 145 155, 155 160 T 175 160" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                        <path d="M 135 165 Q 145 160, 155 165 T 175 165" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                        <path d="M 135 170 Q 145 165, 155 170 T 175 170" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                    </g>
+                                    
+                                    <g id="mito2-group" class="cell-organelle" data-organelle="mitochondria">
+                                        <ellipse cx="385" cy="190" rx="38" ry="24" fill="#F44336" opacity="0.8" stroke="#B71C1C" stroke-width="3"/>
+                                        <path d="M 360 190 Q 370 185, 380 190 T 400 190" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                        <path d="M 360 195 Q 370 190, 380 195 T 400 195" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                        <path d="M 360 200 Q 370 195, 380 200 T 400 200" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                    </g>
+                                    
+                                    <g id="mito3-group" class="cell-organelle" data-organelle="mitochondria">
+                                        <ellipse cx="355" cy="310" rx="38" ry="24" fill="#F44336" opacity="0.8" stroke="#B71C1C" stroke-width="3"/>
+                                        <path d="M 330 310 Q 340 305, 350 310 T 370 310" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                        <path d="M 330 315 Q 340 310, 350 315 T 370 315" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                        <path d="M 330 320 Q 340 315, 350 320 T 370 320" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                    </g>
+                                    
+                                    <g id="mito4-group" class="cell-organelle" data-organelle="mitochondria">
+                                        <ellipse cx="190" cy="330" rx="38" ry="24" fill="#F44336" opacity="0.8" stroke="#B71C1C" stroke-width="3"/>
+                                        <path d="M 165 330 Q 175 325, 185 330 T 205 330" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                        <path d="M 165 335 Q 175 330, 185 335 T 205 335" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                        <path d="M 165 340 Q 175 335, 185 340 T 205 340" stroke="#B71C1C" stroke-width="2" fill="none"/>
+                                        <!-- Label for mitochondria group (moved to bottom left) -->
+                                        <line x1="170" y1="355" x2="100" y2="420" stroke="#F44336" stroke-width="2"/>
+                                        <text x="10" y="423" font-size="13" fill="#F44336" font-weight="bold">Mitochondria</text>
+                                        <text x="10" y="437" font-size="11" fill="#F44336">(powerhouse)</text>
+                                    </g>
+                                    
+                                    <!-- Ribosomes (protein makers) - small dots scattered around -->
+                                    <g id="ribosomes-group" class="cell-organelle" data-organelle="ribosomes">
+                                        <!-- Multiple small ribosomes -->
+                                        <circle cx="210" cy="190" r="5" fill="#FF9800" stroke="#E65100" stroke-width="1.5"/>
+                                        <circle cx="330" cy="250" r="5" fill="#FF9800" stroke="#E65100" stroke-width="1.5"/>
+                                        <circle cx="220" cy="290" r="5" fill="#FF9800" stroke="#E65100" stroke-width="1.5"/>
+                                        <circle cx="320" cy="210" r="5" fill="#FF9800" stroke="#E65100" stroke-width="1.5"/>
+                                        <circle cx="230" cy="360" r="5" fill="#FF9800" stroke="#E65100" stroke-width="1.5"/>
+                                        <circle cx="310" cy="150" r="5" fill="#FF9800" stroke="#E65100" stroke-width="1.5"/>
+                                        <circle cx="370" cy="270" r="5" fill="#FF9800" stroke="#E65100" stroke-width="1.5"/>
+                                        <circle cx="170" cy="250" r="5" fill="#FF9800" stroke="#E65100" stroke-width="1.5"/>
+                                        <!-- Label (moved to right) -->
+                                        <line x1="370" y1="270" x2="420" y2="310" stroke="#FF9800" stroke-width="2"/>
+                                        <text x="425" y="313" font-size="13" fill="#FF9800" font-weight="bold">Ribosomes</text>
+                                        <text x="425" y="327" font-size="11" fill="#FF9800">(protein makers)</text>
+                                    </g>
+                                </svg>
+                                
+                                <button class="btn-tour" id="tour-btn" onclick="startCellTour()">
+                                    🎯 Start Guided Tour
+                                </button>
+                            </div>
+                            
+                            <!-- Right: Information Panel -->
+                            <div class="cell-info-box" id="cell-info-panel">
+                                <h4>👆 Click on any organelle to explore!</h4>
+                                <p><strong>Organelles</strong> are like tiny organs inside the cell - each one has a special job to do.</p>
+                                <p>Try clicking on different parts of the cell to discover:</p>
+                                <ul>
+                                    <li>🟣 <strong>Nucleus</strong> - The cell's control center</li>
+                                    <li>🔴 <strong>Mitochondria</strong> - Energy powerhouses</li>
+                                    <li>🔵 <strong>Cell Membrane</strong> - The outer boundary</li>
+                                    <li>💧 <strong>Cytoplasm</strong> - Jelly-like filling</li>
+                                    <li>🟠 <strong>Ribosomes</strong> - Protein factories</li>
+                                </ul>
+                                <p class="tip">💡 <strong>Tip:</strong> Click the "Start Guided Tour" button to see all parts highlighted in order!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,8 +256,8 @@
             <h2 class="section-title">Healthy Airways: How They Work 🫁</h2>
             
             <div class="comparison-container">
-                <h3>Your Amazing Respiratory System</h3>
-                <p>Let's zoom in from your whole respiratory system down to the tiny cells in your airways!</p>
+                <h3>Your Amazing Breathing System</h3>
+                <p>Let's zoom in from your whole breathing system down to the super tiny cells in your airways!</p>
                 
                 <div class="zoom-levels">
                     <div class="zoom-card" onclick="showZoomLevel(1)">
@@ -213,8 +304,8 @@
                         </div>
                         <div class="zoom-description">
                             <h4>The Big Picture</h4>
-                            <p>When you breathe in, air travels down your <strong>trachea</strong> (windpipe) and splits into two main airways called <strong>bronchi</strong> (one for each lung). These bronchi branch into smaller and smaller tubes called <strong>bronchioles</strong>, like branches on a tree!</p>
-                            <p><strong>Fun Fact:</strong> If you laid out all your airways end-to-end, they'd stretch about 2,400 km – that's the distance from Toronto to Miami!</p>
+                            <p>When you breathe in, air travels down your <strong>trachea</strong> (your windpipe). Then it splits into two main airways called <strong>bronchi</strong> - one for each lung. These bronchi branch into smaller and smaller tubes called <strong>bronchioles</strong> (small breathing tubes), just like branches on a tree!</p>
+                            <p><strong>Cool Fact:</strong> If you laid out all your airways end-to-end, they would stretch about 2,400 km. That's like driving from Toronto to Miami!</p>
                         </div>
                     </div>
                     
@@ -224,22 +315,33 @@
                                 <!-- Cross-section of healthy bronchus -->
                                 <circle cx="200" cy="150" r="100" fill="#FFE4E1" stroke="#FF69B4" stroke-width="3"/>
                                 <circle cx="200" cy="150" r="70" fill="#FFF8DC"/>
-                                <text x="200" y="90" text-anchor="middle" font-size="14" font-weight="bold">Healthy Airway</text>
-                                <text x="200" y="230" text-anchor="middle" font-size="12">Wide Open!</text>
                                 
-                                <!-- Layers -->
+                                <!-- Title at top outside -->
+                                <text x="200" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Healthy Airway</text>
+                                
+                                <!-- Layer indicators with leader lines -->
                                 <circle cx="200" cy="150" r="95" fill="none" stroke="#FF1493" stroke-width="2" stroke-dasharray="5,5"/>
+                                <line x1="295" y1="150" x2="330" y2="110" stroke="#FF1493" stroke-width="2"/>
+                                <text x="335" y="108" font-size="11" fill="#FF1493" font-weight="bold">Muscle</text>
+                                <text x="335" y="120" font-size="11" fill="#FF1493">layer</text>
+                                
                                 <circle cx="200" cy="150" r="75" fill="none" stroke="#FF1493" stroke-width="2" stroke-dasharray="5,5"/>
+                                <line x1="275" y1="150" x2="315" y2="180" stroke="#FF1493" stroke-width="2"/>
+                                <text x="320" y="178" font-size="11" fill="#FF1493" font-weight="bold">Wall</text>
+                                <text x="320" y="190" font-size="11" fill="#FF1493">lining</text>
+                                
+                                <!-- Status label at bottom -->
+                                <text x="200" y="280" text-anchor="middle" font-size="14" font-weight="bold" fill="#2E7D32">✓ Wide Open!</text>
                             </svg>
                         </div>
                         <div class="zoom-description">
                             <h4>Inside an Airway</h4>
-                            <p>Looking at a cross-section of a healthy bronchus, you can see it's like a tunnel with clear, open space in the middle for air to flow freely.</p>
+                            <p>Looking at a cross-section of a healthy bronchus (breathing tube), you can see it's like a tunnel. There's lots of clear, open space in the middle for air to flow freely.</p>
                             <p>The airway wall has three important layers:</p>
                             <ul>
-                                <li><strong>Inner lining:</strong> Special cells that produce mucus and have tiny hairs (cilia)</li>
-                                <li><strong>Muscle layer:</strong> Smooth muscle that can relax or tighten</li>
-                                <li><strong>Outer layer:</strong> Protective tissue</li>
+                                <li><strong>Inner lining:</strong> Special cells that make a protective slippery fluid and have tiny hairs</li>
+                                <li><strong>Muscle layer:</strong> Smooth muscle that can relax (open wide) or tighten (squeeze shut)</li>
+                                <li><strong>Outer layer:</strong> Protective tissue that keeps everything together</li>
                             </ul>
                         </div>
                     </div>
@@ -247,6 +349,9 @@
                     <div class="zoom-content" id="zoom-3">
                         <div class="cell-layer-diagram">
                             <svg viewBox="0 0 400 300" class="anatomy-svg">
+                                <!-- Title at top -->
+                                <text x="200" y="20" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Cellular View</text>
+                                
                                 <!-- Epithelial cells with cilia -->
                                 <rect x="50" y="180" width="40" height="50" fill="#87CEEB" stroke="#4682B4" stroke-width="2" rx="5"/>
                                 <rect x="100" y="180" width="40" height="50" fill="#87CEEB" stroke="#4682B4" stroke-width="2" rx="5"/>
@@ -282,31 +387,155 @@
                                     <line x1="185" y1="180" x2="185" y2="159" stroke="#000080" stroke-width="1.5"/>
                                 </g>
                                 
+                                <!-- Cilia label with leader line (top right) -->
+                                <line x1="185" y1="159" x2="230" y2="110" stroke="#000080" stroke-width="2"/>
+                                <circle cx="230" cy="110" r="2" fill="#000080"/>
+                                <text x="235" y="108" font-size="11" fill="#000080" font-weight="bold">Cilia</text>
+                                <text x="235" y="120" font-size="11" fill="#000080">(tiny hairs)</text>
+                                
                                 <!-- Smooth muscle layer -->
                                 <ellipse cx="200" cy="245" rx="150" ry="15" fill="#FFB6C1" stroke="#FF1493" stroke-width="2"/>
                                 
-                                <!-- Labels -->
-                                <text x="200" y="30" text-anchor="middle" font-size="16" font-weight="bold">Cellular View</text>
-                                <text x="70" y="275" font-size="12" fill="#FF1493">Smooth Muscle</text>
-                                <text x="200" y="150" text-anchor="middle" font-size="12" fill="#000080">Cilia (tiny hairs)</text>
+                                <!-- Muscle label with leader line (bottom left) -->
+                                <line x1="50" y1="245" x2="20" y2="265" stroke="#FF1493" stroke-width="2"/>
+                                <circle cx="20" cy="265" r="2" fill="#FF1493"/>
+                                <text x="25" y="268" font-size="11" fill="#FF1493" font-weight="bold">Smooth</text>
+                                <text x="25" y="280" font-size="11" fill="#FF1493" font-weight="bold">Muscle</text>
                             </svg>
                         </div>
                         <div class="zoom-description">
                             <h4>Meet the Airway Cells!</h4>
-                            <p><strong>Epithelial Cells (blue):</strong> These cells line your airways like tiles on a floor. They:</p>
+                            <p><strong>Epithelial Cells (blue):</strong> These cells line your airways like tiles on a floor. They do important jobs:</p>
                             <ul>
                                 <li>Have tiny hair-like structures called <strong>cilia</strong> that wave back and forth</li>
-                                <li>Produce a thin layer of <strong>mucus</strong> to trap dust and germs</li>
-                                <li>Work together to move mucus up and out of your lungs</li>
+                                <li>Make a thin layer of slippery fluid (called mucus) to trap dust and germs</li>
+                                <li>Work together like a team to move the slippery fluid up and out of your lungs</li>
                             </ul>
-                            <p><strong>Smooth Muscle Cells (pink):</strong> These surround your airways and:</p>
+                            <p><strong>Smooth Muscle Cells (pink):</strong> These wrap around your airways and:</p>
                             <ul>
-                                <li>Stay relaxed in healthy airways</li>
-                                <li>Control airway width</li>
-                                <li>Respond to signals from your nervous system</li>
+                                <li>Stay relaxed in healthy airways so air flows easily</li>
+                                <li>Control how wide or narrow your airways are</li>
+                                <li>Get signals from your nervous system telling them when to relax or squeeze</li>
                             </ul>
-                            <p><strong>Fun Fact:</strong> Your cilia beat about 10-20 times per second, like tiny oars rowing in sync!</p>
+                            <p><strong>Amazing Fact:</strong> Your cilia beat about 10-20 times per second - like tiny oars rowing in perfect rhythm!</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Labeled Lung Diagram -->
+            <div class="interactive-lung-section">
+                <h3>🫁 Interactive Lung Anatomy</h3>
+                <p>Click on each part to learn about it! Then press the "Breathe" button to see air flow.</p>
+                
+                <div class="lung-interactive-container">
+                    <div class="lung-diagram-area">
+                        <svg id="interactive-lung-svg" viewBox="0 0 500 600" class="interactive-lung-svg">
+                            <!-- Trachea (Windpipe) -->
+                            <g id="trachea-group" class="clickable-part" data-part="trachea">
+                                <rect x="235" y="50" width="30" height="100" fill="#64B5F6" stroke="#1976D2" stroke-width="3" rx="5"/>
+                                <!-- Cartilage rings -->
+                                <line x1="235" y1="65" x2="265" y2="65" stroke="#1976D2" stroke-width="2"/>
+                                <line x1="235" y1="85" x2="265" y2="85" stroke="#1976D2" stroke-width="2"/>
+                                <line x1="235" y1="105" x2="265" y2="105" stroke="#1976D2" stroke-width="2"/>
+                                <line x1="235" y1="125" x2="265" y2="125" stroke="#1976D2" stroke-width="2"/>
+                                <circle cx="250" cy="50" r="15" fill="#64B5F6" stroke="#1976D2" stroke-width="3"/>
+                                <text x="250" y="55" text-anchor="middle" font-size="20">👃</text>
+                            </g>
+                            
+                            <!-- Left Bronchus -->
+                            <g id="left-bronchus-group" class="clickable-part" data-part="bronchus">
+                                <path d="M 245 150 Q 200 170, 170 200" fill="none" stroke="#9C27B0" stroke-width="25" stroke-linecap="round"/>
+                            </g>
+                            
+                            <!-- Right Bronchus -->
+                            <g id="right-bronchus-group" class="clickable-part" data-part="bronchus">
+                                <path d="M 255 150 Q 300 170, 330 200" fill="none" stroke="#9C27B0" stroke-width="25" stroke-linecap="round"/>
+                            </g>
+                            
+                            <!-- Left Bronchioles -->
+                            <g id="left-bronchioles-group" class="clickable-part" data-part="bronchioles">
+                                <!-- Main branches -->
+                                <path d="M 170 200 L 130 240" stroke="#E91E63" stroke-width="12" stroke-linecap="round"/>
+                                <path d="M 170 200 L 150 260" stroke="#E91E63" stroke-width="12" stroke-linecap="round"/>
+                                <path d="M 170 200 L 180 250" stroke="#E91E63" stroke-width="12" stroke-linecap="round"/>
+                                <!-- Sub-branches -->
+                                <path d="M 130 240 L 110 270" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 130 240 L 140 275" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 150 260 L 130 290" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 150 260 L 160 295" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 180 250 L 190 285" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 180 250 L 200 280" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                            </g>
+                            
+                            <!-- Right Bronchioles -->
+                            <g id="right-bronchioles-group" class="clickable-part" data-part="bronchioles">
+                                <!-- Main branches -->
+                                <path d="M 330 200 L 370 240" stroke="#E91E63" stroke-width="12" stroke-linecap="round"/>
+                                <path d="M 330 200 L 350 260" stroke="#E91E63" stroke-width="12" stroke-linecap="round"/>
+                                <path d="M 330 200 L 320 250" stroke="#E91E63" stroke-width="12" stroke-linecap="round"/>
+                                <!-- Sub-branches -->
+                                <path d="M 370 240 L 390 270" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 370 240 L 360 275" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 350 260 L 370 290" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 350 260 L 340 295" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 320 250 L 310 285" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                                <path d="M 320 250 L 300 280" stroke="#E91E63" stroke-width="8" stroke-linecap="round"/>
+                            </g>
+                            
+                            <!-- Left Lung Outline with Alveoli -->
+                            <g id="left-alveoli-group" class="clickable-part" data-part="alveoli">
+                                <ellipse cx="150" cy="350" rx="90" ry="150" fill="#FFCDD2" opacity="0.4" stroke="#F44336" stroke-width="2"/>
+                                <!-- Alveoli clusters -->
+                                <circle cx="120" cy="290" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="110" cy="300" r="5" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="105" cy="310" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="140" cy="320" r="7" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="130" cy="330" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="150" cy="340" r="5" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="170" cy="350" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="160" cy="360" r="7" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="140" cy="380" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="130" cy="400" r="5" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="160" cy="420" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="180" cy="390" r="7" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                            </g>
+                            
+                            <!-- Right Lung Outline with Alveoli -->
+                            <g id="right-alveoli-group" class="clickable-part" data-part="alveoli">
+                                <ellipse cx="350" cy="350" rx="90" ry="150" fill="#FFCDD2" opacity="0.4" stroke="#F44336" stroke-width="2"/>
+                                <!-- Alveoli clusters -->
+                                <circle cx="380" cy="290" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="390" cy="300" r="5" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="395" cy="310" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="360" cy="320" r="7" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="370" cy="330" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="350" cy="340" r="5" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="330" cy="350" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="340" cy="360" r="7" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="360" cy="380" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="370" cy="400" r="5" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="340" cy="420" r="6" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                                <circle cx="320" cy="390" r="7" fill="#FFCDD2" stroke="#F44336" stroke-width="1"/>
+                            </g>
+                            
+                            <!-- Airflow particles (hidden initially) -->
+                            <g id="airflow-group" style="display: none;">
+                                <!-- Oxygen particles (blue) -->
+                                <circle class="air-particle oxygen" cx="250" cy="70" r="4" fill="#2196F3"/>
+                                <circle class="air-particle oxygen" cx="245" cy="90" r="4" fill="#2196F3"/>
+                                <circle class="air-particle oxygen" cx="255" cy="110" r="4" fill="#2196F3"/>
+                            </g>
+                        </svg>
+                        
+                        <button class="btn-breathe" id="breathe-btn" onclick="animateBreathe()">
+                            💨 Breathe In/Out
+                        </button>
+                    </div>
+                    
+                    <div class="lung-info-panel" id="lung-info-panel">
+                        <h4>👆 Click on a part to learn!</h4>
+                        <p>Explore the different parts of your breathing system. Click on the trachea, bronchi, bronchioles, or alveoli to discover what they do!</p>
                     </div>
                 </div>
             </div>
@@ -321,91 +550,30 @@
             <h2 class="section-title">Asthma's Effects on Cells and Tissues 😮‍💨</h2>
             
             <div class="asthma-content">
-                <h3>Before vs. After: The Asthma Attack</h3>
-                <p>Watch what happens to your airways during an asthma attack!</p>
-                
-                <div class="comparison-slider-container">
-                    <div class="comparison-images">
-                        <div class="image-container healthy">
-                            <h4>✅ Healthy Airway</h4>
-                            <svg viewBox="0 0 300 300" class="comparison-svg">
-                                <!-- Healthy airway -->
-                                <circle cx="150" cy="150" r="120" fill="#FFE4E1" stroke="#FF69B4" stroke-width="2"/>
-                                <circle cx="150" cy="150" r="90" fill="#FFF8DC"/>
-                                <text x="150" y="155" text-anchor="middle" font-size="24">😊</text>
-                                <text x="150" y="270" text-anchor="middle" font-size="14" font-weight="bold">Wide & Open</text>
-                                
-                                <!-- Epithelial cells -->
-                                <rect x="30" y="135" width="15" height="30" fill="#87CEEB" stroke="#4682B4" stroke-width="1"/>
-                                <rect x="45" y="135" width="15" height="30" fill="#87CEEB" stroke="#4682B4" stroke-width="1"/>
-                                
-                                <!-- Thin mucus layer -->
-                                <path d="M 30 135 Q 150 120 270 135" fill="#90EE90" opacity="0.3" stroke="#228B22" stroke-width="1"/>
-                                
-                                <!-- Relaxed muscle -->
-                                <circle cx="150" cy="150" r="125" fill="none" stroke="#FFB6C1" stroke-width="3"/>
-                            </svg>
-                            <ul class="feature-list">
-                                <li>✅ Relaxed muscles</li>
-                                <li>✅ Thin mucus layer</li>
-                                <li>✅ Normal cell size</li>
-                                <li>✅ Clear airflow</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="image-container asthma">
-                            <h4>⚠️ During Asthma Attack</h4>
-                            <svg viewBox="0 0 300 300" class="comparison-svg">
-                                <!-- Asthmatic airway -->
-                                <circle cx="150" cy="150" r="130" fill="#FFCCCC" stroke="#FF4444" stroke-width="3"/>
-                                <circle cx="150" cy="150" r="50" fill="#FFFFCC"/>
-                                <text x="150" y="155" text-anchor="middle" font-size="24">😰</text>
-                                <text x="150" y="270" text-anchor="middle" font-size="14" font-weight="bold">Narrow & Blocked</text>
-                                
-                                <!-- Swollen epithelial cells -->
-                                <rect x="20" y="125" width="20" height="50" fill="#FF6B6B" stroke="#8B0000" stroke-width="1"/>
-                                <rect x="40" y="125" width="20" height="50" fill="#FF6B6B" stroke="#8B0000" stroke-width="1"/>
-                                
-                                <!-- Thick mucus -->
-                                <path d="M 20 125 Q 150 100 280 125" fill="#90EE90" opacity="0.7" stroke="#228B22" stroke-width="2"/>
-                                <circle cx="100" cy="110" r="8" fill="#90EE90" opacity="0.8"/>
-                                <circle cx="150" cy="105" r="10" fill="#90EE90" opacity="0.8"/>
-                                <circle cx="200" cy="108" r="9" fill="#90EE90" opacity="0.8"/>
-                                
-                                <!-- Constricted muscle -->
-                                <circle cx="150" cy="150" r="135" fill="none" stroke="#FF1493" stroke-width="8"/>
-                            </svg>
-                            <ul class="feature-list">
-                                <li>❌ Tight muscles</li>
-                                <li>❌ Excess mucus</li>
-                                <li>❌ Swollen cells</li>
-                                <li>❌ Restricted airflow</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="animation-section">
                     <h3>Watch an Asthma Attack in Action</h3>
-                    <p>Click the button to see what happens step-by-step at the cellular level!</p>
+                    <p>Click the button to see what happens step-by-step at the cell level. It's like a slow-motion replay!</p>
                     
                     <button class="btn-animate" id="animate-btn" onclick="startAsthmaAnimation()">
                         ▶️ Start Animation
                     </button>
                     
                     <div class="animation-container" id="asthma-animation">
-                        <div class="animation-stage" id="animation-stage">
-                            <div class="stage-normal" id="stage-0">
-                                <svg viewBox="0 0 500 300" class="animation-svg">
-                                    <circle cx="250" cy="150" r="100" fill="#FFE4E1" stroke="#FF69B4" stroke-width="2"/>
-                                    <circle cx="250" cy="150" r="80" fill="#FFF8DC"/>
-                                    <text x="250" y="260" text-anchor="middle" font-size="16" font-weight="bold">Normal Airway</text>
-                                </svg>
+                        <div class="animation-stage-wrapper">
+                            <div class="animation-stage" id="animation-stage">
+                                <div class="stage-normal" id="stage-0">
+                                    <svg viewBox="0 0 500 300" class="animation-svg">
+                                        <circle cx="250" cy="150" r="100" fill="#FFE4E1" stroke="#FF69B4" stroke-width="2"/>
+                                        <circle cx="250" cy="150" r="80" fill="#FFF8DC"/>
+                                        <!-- Title at bottom outside diagram -->
+                                        <text x="250" y="285" text-anchor="middle" font-size="16" font-weight="bold" fill="#2E7D32">Normal Airway</text>
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                        <div class="animation-description" id="animation-text">
-                            <h4 id="stage-title">Normal State</h4>
-                            <p id="stage-description">Your airways are clear and open. Air flows freely in and out.</p>
+                            <div class="animation-description" id="animation-text">
+                                <h4 id="stage-title">Normal State</h4>
+                                <p id="stage-description">Your airways are clear and open. Air flows freely in and out.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -419,16 +587,16 @@
                             <div class="change-details">
                                 <p><strong>Normal:</strong></p>
                                 <ul>
-                                    <li>Flat and organized</li>
-                                    <li>Produce small amount of mucus</li>
-                                    <li>Cilia beat rhythmically</li>
+                                    <li>Flat and neatly organized</li>
+                                    <li>Make a small amount of slippery fluid</li>
+                                    <li>Tiny hairs (cilia) beat smoothly</li>
                                 </ul>
                                 <p><strong>During Asthma:</strong></p>
                                 <ul>
-                                    <li>Become inflamed and swollen</li>
-                                    <li>Produce 10-20x more mucus!</li>
-                                    <li>Some cells may be damaged</li>
-                                    <li>Cilia can't move mucus effectively</li>
+                                    <li>Get red, puffy, and swollen</li>
+                                    <li>Make 10-20 times MORE slippery fluid than normal!</li>
+                                    <li>Some cells get damaged</li>
+                                    <li>Cilia can't sweep the fluid away anymore</li>
                                 </ul>
                             </div>
                         </div>
@@ -438,16 +606,16 @@
                             <div class="change-details">
                                 <p><strong>Normal:</strong></p>
                                 <ul>
-                                    <li>Relaxed and thin</li>
-                                    <li>Maintain airway shape</li>
-                                    <li>Respond to normal signals</li>
+                                    <li>Relaxed and thin, like a loose rubber band</li>
+                                    <li>Keep airway shape nice and round</li>
+                                    <li>Only squeeze when they need to</li>
                                 </ul>
                                 <p><strong>During Asthma:</strong></p>
                                 <ul>
-                                    <li>Contract tightly (bronchospasm)</li>
-                                    <li>Become thicker over time</li>
-                                    <li>Over-react to triggers</li>
-                                    <li>Squeeze airways shut</li>
+                                    <li>Squeeze super tight (like a tight fist)</li>
+                                    <li>Get thicker and stronger over time</li>
+                                    <li>Overreact to things that shouldn't bother them</li>
+                                    <li>Squeeze airways almost completely shut</li>
                                 </ul>
                             </div>
                         </div>
@@ -457,16 +625,16 @@
                             <div class="change-details">
                                 <p><strong>Normal:</strong></p>
                                 <ul>
-                                    <li>Few immune cells present</li>
-                                    <li>Quiet and inactive</li>
-                                    <li>Ready to fight real threats</li>
+                                    <li>Just a few immune cells hanging around</li>
+                                    <li>Quiet and calm</li>
+                                    <li>Ready to fight real dangers like germs</li>
                                 </ul>
                                 <p><strong>During Asthma:</strong></p>
                                 <ul>
-                                    <li>Many immune cells rush in</li>
-                                    <li>Release inflammatory chemicals</li>
-                                    <li>Attack harmless triggers (overreaction)</li>
-                                    <li>Cause swelling and irritation</li>
+                                    <li>Tons of immune cells rush to the scene</li>
+                                    <li>Release chemicals that cause swelling</li>
+                                    <li>Attack harmless things like pollen (they overreact!)</li>
+                                    <li>Make airways get puffy and irritated</li>
                                 </ul>
                             </div>
                         </div>
@@ -476,16 +644,16 @@
                             <div class="change-details">
                                 <p><strong>Normal:</strong></p>
                                 <ul>
-                                    <li>Scattered throughout airways</li>
-                                    <li>Produce protective mucus</li>
-                                    <li>Keep airways moist</li>
+                                    <li>Scattered here and there in airways</li>
+                                    <li>Make a protective slippery fluid to keep airways moist</li>
+                                    <li>Just the right amount - not too much, not too little</li>
                                 </ul>
                                 <p><strong>During Asthma:</strong></p>
                                 <ul>
-                                    <li>Number increases dramatically</li>
-                                    <li>Work overtime producing mucus</li>
-                                    <li>Mucus becomes thick and sticky</li>
-                                    <li>Blocks airways like glue</li>
+                                    <li>Way more goblet cells appear</li>
+                                    <li>Work overtime making tons of slippery fluid</li>
+                                    <li>The fluid becomes thick and sticky like glue</li>
+                                    <li>Blocks airways so air can't get through</li>
                                 </ul>
                             </div>
                         </div>
@@ -493,19 +661,19 @@
                 </div>
 
                 <div class="key-concepts">
-                    <h3>🔑 Key Concepts to Remember</h3>
+                    <h3>🔑 Key Ideas to Remember</h3>
                     <div class="concept-cards">
                         <div class="concept-card">
-                            <h4>Inflammation</h4>
-                            <p>When immune cells release chemicals that cause tissues to become red, swollen, and irritated. It's like your airway tissues are "puffy" and sensitive.</p>
+                            <h4>Inflammation (Swelling)</h4>
+                            <p>When your body's defense cells release chemicals that make tissues get red, puffy, and irritated. It's like when your ankle swells up after you twist it - except this happens inside your airways!</p>
                         </div>
                         <div class="concept-card">
-                            <h4>Bronchoconstriction</h4>
-                            <p>The tightening of smooth muscles around airways. Think of it like a rubber band squeezing a tube – it makes the opening smaller!</p>
+                            <h4>Bronchoconstriction (Airway Squeezing)</h4>
+                            <p>The tightening of smooth muscles around airways. Imagine squeezing a flexible straw while trying to drink through it - that's what happens to your airways! The opening gets much smaller.</p>
                         </div>
                         <div class="concept-card">
-                            <h4>Mucus Hypersecretion</h4>
-                            <p>When goblet cells produce way too much mucus. Instead of a thin protective layer, it becomes a thick, sticky blockage.</p>
+                            <h4>Mucus Hypersecretion (Too Much Sticky Fluid)</h4>
+                            <p>When goblet cells make way too much slippery, sticky fluid. Instead of a thin protective coating, it becomes a thick, gooey blockage - like trying to breathe through honey!</p>
                         </div>
                     </div>
                 </div>
@@ -525,8 +693,8 @@
                 
                 <!-- Activity 1: Drag and Drop -->
                 <div class="activity-card">
-                    <h4>🎯 Activity 1: Build the Biological Hierarchy</h4>
-                    <p>Drag the items to arrange them in the correct order from smallest to largest!</p>
+                    <h4>🎯 Activity 1: Build the Body Organization</h4>
+                    <p>Drag the items to put them in the correct order from smallest to biggest!</p>
                     
                     <div class="drag-drop-game" id="hierarchy-game">
                         <div class="drop-zones">
@@ -534,13 +702,13 @@
                                 <span class="zone-label">1. Smallest</span>
                             </div>
                             <div class="drop-zone" data-correct="tissue">
-                                <span class="zone-label">2.</span>
+                                <span class="zone-label">2. Small</span>
                             </div>
                             <div class="drop-zone" data-correct="organ">
-                                <span class="zone-label">3.</span>
+                                <span class="zone-label">3. Big</span>
                             </div>
                             <div class="drop-zone" data-correct="system">
-                                <span class="zone-label">4. Largest</span>
+                                <span class="zone-label">4. Biggest</span>
                             </div>
                         </div>
                         
@@ -570,8 +738,8 @@
 
                 <!-- Activity 2: Match Cell Organelles -->
                 <div class="activity-card">
-                    <h4>🧩 Activity 2: Match the Cell Organelle to Its Function</h4>
-                    <p>Draw lines to connect each cell part with what it does!</p>
+                    <h4>🧩 Activity 2: Match the Cell Part to Its Job</h4>
+                    <p>Click to connect each cell part with what it does!</p>
                     
                     <div class="matching-game" id="organelle-match">
                         <div class="match-columns">
@@ -598,16 +766,16 @@
                             <div class="match-column">
                                 <h5>Function</h5>
                                 <div class="match-item" data-match="mitochondria" onclick="selectMatchItem(this)">
-                                    <span>Produces energy (ATP) for the cell</span>
+                                    <span>Makes energy (ATP) to power the cell</span>
                                 </div>
                                 <div class="match-item" data-match="nucleus" onclick="selectMatchItem(this)">
-                                    <span>Controls cell activities and contains DNA</span>
+                                    <span>Controls what the cell does and holds DNA</span>
                                 </div>
                                 <div class="match-item" data-match="cytoplasm" onclick="selectMatchItem(this)">
-                                    <span>Jelly-like substance where organelles float</span>
+                                    <span>Jelly-like stuff where cell parts float</span>
                                 </div>
                                 <div class="match-item" data-match="membrane" onclick="selectMatchItem(this)">
-                                    <span>Controls what enters and leaves the cell</span>
+                                    <span>Decides what goes in and out of the cell</span>
                                 </div>
                             </div>
                         </div>
@@ -617,40 +785,196 @@
                     </div>
                 </div>
 
-                <!-- Activity 3: Asthma Trigger Simulator -->
-                <div class="activity-card">
-                    <h4>🌪️ Activity 3: Asthma Trigger Simulator</h4>
-                    <p>Click on different triggers to see how they affect the airways!</p>
+                <!-- Activity 3: Enhanced Asthma Trigger Simulator -->
+                <div class="activity-card enhanced-simulator">
+                    <h4>🌪️ Activity 3: Asthma Trigger Challenge</h4>
+                    <p>Test your knowledge! Can you spot asthma triggers in real-life situations?</p>
                     
-                    <div class="simulator-game">
-                        <div class="trigger-buttons">
-                            <button class="trigger-btn" onclick="simulateTrigger('pollen')">
-                                🌼 Pollen
-                            </button>
-                            <button class="trigger-btn" onclick="simulateTrigger('exercise')">
-                                🏃 Exercise
-                            </button>
-                            <button class="trigger-btn" onclick="simulateTrigger('cold')">
-                                ❄️ Cold Air
-                            </button>
-                            <button class="trigger-btn" onclick="simulateTrigger('smoke')">
-                                💨 Smoke
-                            </button>
-                            <button class="trigger-btn normal" onclick="simulateTrigger('normal')">
-                                ✅ Reset to Normal
-                            </button>
+                    <!-- Progress Bar -->
+                    <div class="simulator-progress">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="progress-text" id="progress-text">Scenario 1 of 7</div>
+                        <div class="score-display" id="score-display">Score: 0 / 0</div>
+                    </div>
+                    
+                    <!-- Scenario Display -->
+                    <div class="scenario-container" id="scenario-container">
+                        <div class="scenario-card" id="scenario-card">
+                            <!-- Character Avatar -->
+                            <div class="character-avatar" id="character-avatar">
+                                <div class="avatar-face">
+                                    <div class="avatar-body"></div>
+                                    <div class="avatar-expression" id="avatar-expression">😊</div>
+                                </div>
+                                <div class="breathing-meter" id="breathing-meter">
+                                    <div class="meter-label">Breathing:</div>
+                                    <div class="meter-bars">
+                                        <div class="meter-bar active"></div>
+                                        <div class="meter-bar active"></div>
+                                        <div class="meter-bar active"></div>
+                                        <div class="meter-bar active"></div>
+                                        <div class="meter-bar active"></div>
+                                    </div>
+                                    <div class="meter-status">Easy 🌟</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Scenario Content -->
+                            <div class="scenario-content">
+                                <div class="scenario-situation" id="scenario-situation">
+                                    Loading scenario...
+                                </div>
+                                
+                                <div class="scenario-question">
+                                    <h5>Will this trigger asthma?</h5>
+                                </div>
+                                
+                                <div class="scenario-choices" id="scenario-choices">
+                                    <button class="choice-btn yes-btn" onclick="makeChoice(true)">
+                                        <span class="choice-icon">⚠️</span>
+                                        <span class="choice-text">YES - This is a trigger!</span>
+                                    </button>
+                                    <button class="choice-btn no-btn" onclick="makeChoice(false)">
+                                        <span class="choice-icon">✅</span>
+                                        <span class="choice-text">NO - This is safe</span>
+                                    </button>
+                                </div>
+                                
+                                <!-- Feedback Panel (hidden initially) -->
+                                <div class="feedback-panel" id="feedback-panel" style="display: none;">
+                                    <div class="feedback-icon" id="feedback-icon">✓</div>
+                                    <div class="feedback-message" id="feedback-message"></div>
+                                    <div class="feedback-explanation" id="feedback-explanation"></div>
+                                    
+                                    <!-- Airways Animation -->
+                                    <div class="airways-animation" id="airways-animation">
+                                        <svg viewBox="0 0 300 200" class="feedback-svg">
+                                            <g id="feedback-airways">
+                                                <circle cx="150" cy="100" r="70" id="fb-outer" fill="#FFE4E1" stroke="#FF69B4" stroke-width="2"/>
+                                                <circle cx="150" cy="100" r="55" id="fb-inner" fill="#FFF8DC"/>
+                                                <text x="150" y="105" text-anchor="middle" font-size="20" id="fb-emoji">😊</text>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    
+                                    <button class="btn-continue" id="btn-continue" onclick="nextScenario()">
+                                        Continue →
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="simulator-display" id="simulator-display">
-                            <svg viewBox="0 0 400 300" id="simulator-svg" class="simulator-svg">
-                                <circle cx="200" cy="150" r="100" id="sim-outer" fill="#FFE4E1" stroke="#FF69B4" stroke-width="2"/>
-                                <circle cx="200" cy="150" r="80" id="sim-inner" fill="#FFF8DC"/>
-                                <text x="200" y="155" text-anchor="middle" font-size="24" id="sim-emoji">😊</text>
-                                <text x="200" y="270" text-anchor="middle" font-size="14" font-weight="bold" id="sim-label">Normal Airway</text>
-                            </svg>
-                            <div class="simulator-info" id="simulator-info">
-                                <p>Click a trigger to see what happens!</p>
+                        <!-- Severity Slider (shown for some scenarios) -->
+                        <div class="severity-slider-container" id="severity-container" style="display: none;">
+                            <h5>How severe is this trigger?</h5>
+                            <p>Move the slider to see how airways react differently!</p>
+                            <div class="severity-slider">
+                                <input type="range" min="1" max="3" value="2" class="slider" id="severity-slider" oninput="updateSeverity(this.value)">
+                                <div class="severity-labels">
+                                    <span>Mild</span>
+                                    <span>Moderate</span>
+                                    <span>Severe</span>
+                                </div>
                             </div>
+                            <div class="severity-description" id="severity-description">
+                                <strong>Moderate trigger:</strong> Airways narrow, might need inhaler
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Final Results (hidden initially) -->
+                    <div class="final-results" id="final-results" style="display: none;">
+                        <div class="results-content">
+                            <h3 id="results-title">🎉 Challenge Complete!</h3>
+                            <div class="results-score">
+                                <div class="score-circle">
+                                    <span class="score-number" id="final-score">0</span>
+                                    <span class="score-total">/ 7</span>
+                                </div>
+                            </div>
+                            <div class="results-message" id="results-message"></div>
+                            <div class="results-badges" id="results-badges"></div>
+                            <button class="btn-restart" onclick="restartSimulator()">
+                                🔄 Play Again
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity 4: Trigger Animations Gallery -->
+                <div class="activity-card trigger-animations-section">
+                    <h4>🎬 Activity 4: See How Triggers Work</h4>
+                    <p>Watch these short videos to see exactly what happens when different things trigger asthma!</p>
+                    
+                    <div class="trigger-grid">
+                        <!-- Pollen Trigger -->
+                        <div class="trigger-animation-card">
+                            <h5>🌼 Pollen</h5>
+                            <div class="animation-player" id="pollen-animation">
+                                <svg viewBox="0 0 400 320" class="trigger-svg">
+                                    <!-- This will be populated by JavaScript -->
+                                </svg>
+                            </div>
+                            <button class="btn-play-trigger" onclick="playTriggerAnimation('pollen')">▶️ Play Animation</button>
+                            <p class="trigger-description">You breathe in tiny pollen → Your body thinks it's dangerous → Your airways get swollen and make sticky goop</p>
+                        </div>
+
+                        <!-- Exercise Trigger -->
+                        <div class="trigger-animation-card">
+                            <h5>🏃 Exercise</h5>
+                            <div class="animation-player" id="exercise-animation">
+                                <svg viewBox="0 0 400 320" class="trigger-svg">
+                                    <!-- This will be populated by JavaScript -->
+                                </svg>
+                            </div>
+                            <button class="btn-play-trigger" onclick="playTriggerAnimation('exercise')">▶️ Play Animation</button>
+                            <p class="trigger-description">You run fast and breathe hard → Your airways dry out → The muscles around them squeeze tight</p>
+                        </div>
+
+                        <!-- Cold Air Trigger -->
+                        <div class="trigger-animation-card">
+                            <h5>❄️ Cold Air</h5>
+                            <div class="animation-player" id="cold-animation">
+                                <svg viewBox="0 0 400 320" class="trigger-svg">
+                                </svg>
+                            </div>
+                            <button class="btn-play-trigger" onclick="playTriggerAnimation('cold')">▶️ Play Animation</button>
+                            <p class="trigger-description">Cold air rushes into your lungs → It bothers the inside of your airways → The muscles squeeze to try keeping you warm</p>
+                        </div>
+
+                        <!-- Smoke Trigger -->
+                        <div class="trigger-animation-card">
+                            <h5>💨 Smoke</h5>
+                            <div class="animation-player" id="smoke-animation">
+                                <svg viewBox="0 0 400 320" class="trigger-svg">
+                                </svg>
+                            </div>
+                            <button class="btn-play-trigger" onclick="playTriggerAnimation('smoke')">▶️ Play Animation</button>
+                            <p class="trigger-description">You breathe in smoke → It hurts the cells in your airways → Everything swells up a lot and makes tons of sticky goop</p>
+                        </div>
+
+                        <!-- Dust Trigger -->
+                        <div class="trigger-animation-card">
+                            <h5>🌫️ Dust</h5>
+                            <div class="animation-player" id="dust-animation">
+                                <svg viewBox="0 0 400 320" class="trigger-svg">
+                                </svg>
+                            </div>
+                            <button class="btn-play-trigger" onclick="playTriggerAnimation('dust')">▶️ Play Animation</button>
+                            <p class="trigger-description">Tiny dust bugs and dust bits go into your airways → Your body has an allergic reaction → Your airways puff up and get filled with goop</p>
+                        </div>
+
+                        <!-- Pet Dander Trigger -->
+                        <div class="trigger-animation-card">
+                            <h5>🐾 Pet Dander</h5>
+                            <div class="animation-player" id="pet-animation">
+                                <svg viewBox="0 0 400 320" class="trigger-svg">
+                                </svg>
+                            </div>
+                            <button class="btn-play-trigger" onclick="playTriggerAnimation('pet')">▶️ Play Animation</button>
+                            <p class="trigger-description">Tiny bits of pet skin float into your nose → Your body goes crazy fighting them → Your airways swell and it gets hard to breathe</p>
                         </div>
                     </div>
                 </div>
@@ -665,14 +989,12 @@
         <div class="container">
             <h2 class="section-title">Knowledge Check Quiz 📝</h2>
             
-            <div class="quiz-container">
-                <p class="quiz-intro">Test what you've learned! Answer all questions and see your score.</p>
-                
-                <div id="quiz-questions">
+                <div class="quiz-container">
+                <p class="quiz-intro">Test what you've learned! Answer all questions to see your score.</p>                <div id="quiz-questions">
                     <!-- Question 1 -->
                     <div class="quiz-question" data-question="1">
                         <h4>Question 1:</h4>
-                        <p>Which cell organelle is known as the "powerhouse of the cell" because it produces energy?</p>
+                        <p>Which cell part is called the "powerhouse of the cell" because it makes energy?</p>
                         <div class="quiz-options">
                             <label class="quiz-option">
                                 <input type="radio" name="q1" value="a">
@@ -696,7 +1018,7 @@
                     <!-- Question 2 -->
                     <div class="quiz-question" data-question="2">
                         <h4>Question 2:</h4>
-                        <p>What is the correct order from smallest to largest in biological organization?</p>
+                        <p>What is the correct order from tiniest to biggest in how your body is organized?</p>
                         <div class="quiz-options">
                             <label class="quiz-option">
                                 <input type="radio" name="q2" value="a">
@@ -744,7 +1066,7 @@
                     <!-- Question 4 -->
                     <div class="quiz-question" data-question="4">
                         <h4>Question 4:</h4>
-                        <p>What are the tiny hair-like structures on airway cells that help move mucus called?</p>
+                        <p>What are the tiny hair-like things on airway cells that help sweep away slippery fluid?</p>
                         <div class="quiz-options">
                             <label class="quiz-option">
                                 <input type="radio" name="q4" value="a">
@@ -768,27 +1090,27 @@
                     <!-- Question 5 -->
                     <div class="quiz-question" data-question="5">
                         <h4>Question 5:</h4>
-                        <p>Which THREE things happen to airways during an asthma attack? (Select all that apply)</p>
+                        <p>Which THREE things happen to airways during an asthma attack? (Check all that are true)</p>
                         <div class="quiz-options checkbox">
                             <label class="quiz-option">
                                 <input type="checkbox" name="q5" value="a">
-                                <span>A) Airways become swollen and inflamed</span>
+                                <span>A) Airways get swollen and puffy</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="checkbox" name="q5" value="b">
-                                <span>B) Airways become wider and more relaxed</span>
+                                <span>B) Airways get wider and more relaxed</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="checkbox" name="q5" value="c">
-                                <span>C) Muscles around airways tighten</span>
+                                <span>C) Muscles around airways squeeze tight</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="checkbox" name="q5" value="d">
-                                <span>D) Extra mucus is produced</span>
+                                <span>D) Extra sticky fluid is made</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="checkbox" name="q5" value="e">
-                                <span>E) All mucus disappears</span>
+                                <span>E) All sticky fluid disappears</span>
                             </label>
                         </div>
                     </div>
@@ -796,23 +1118,23 @@
                     <!-- Question 6 -->
                     <div class="quiz-question" data-question="6">
                         <h4>Question 6:</h4>
-                        <p>What is the main function of the cell membrane?</p>
+                        <p>What is the main job of the cell membrane (the cell's outer layer)?</p>
                         <div class="quiz-options">
                             <label class="quiz-option">
                                 <input type="radio" name="q6" value="a">
-                                <span>A) To produce energy</span>
+                                <span>A) To make energy</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="q6" value="b">
-                                <span>B) To control what enters and leaves the cell</span>
+                                <span>B) To decide what goes in and out of the cell</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="q6" value="c">
-                                <span>C) To store DNA</span>
+                                <span>C) To hold DNA</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="q6" value="d">
-                                <span>D) To digest food particles</span>
+                                <span>D) To break down food</span>
                             </label>
                         </div>
                     </div>
@@ -820,7 +1142,7 @@
                     <!-- Question 7 -->
                     <div class="quiz-question" data-question="7">
                         <h4>Question 7:</h4>
-                        <p>Which type of cells produce excessive mucus during an asthma attack?</p>
+                        <p>Which type of cells make too much sticky fluid during an asthma attack?</p>
                         <div class="quiz-options">
                             <label class="quiz-option">
                                 <input type="radio" name="q7" value="a">
@@ -844,23 +1166,23 @@
                     <!-- Question 8 -->
                     <div class="quiz-question" data-question="8">
                         <h4>Question 8:</h4>
-                        <p>What does the nucleus of a cell do?</p>
+                        <p>What does the nucleus (the cell's control center) do?</p>
                         <div class="quiz-options">
                             <label class="quiz-option">
                                 <input type="radio" name="q8" value="a">
-                                <span>A) Controls cell activities and contains DNA</span>
+                                <span>A) Controls what the cell does and holds DNA</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="q8" value="b">
-                                <span>B) Produces energy</span>
+                                <span>B) Makes energy</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="q8" value="c">
-                                <span>C) Protects the cell from outside threats</span>
+                                <span>C) Protects the cell from enemies</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="q8" value="d">
-                                <span>D) Stores water and nutrients</span>
+                                <span>D) Stores water and food</span>
                             </label>
                         </div>
                     </div>
@@ -892,23 +1214,23 @@
                     <!-- Question 10 -->
                     <div class="quiz-question" data-question="10">
                         <h4>Question 10:</h4>
-                        <p>What is inflammation?</p>
+                        <p>What is inflammation (swelling)?</p>
                         <div class="quiz-options">
                             <label class="quiz-option">
                                 <input type="radio" name="q10" value="a">
-                                <span>A) When cells divide rapidly</span>
+                                <span>A) When cells divide really fast</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="q10" value="b">
-                                <span>B) When tissues become red, swollen, and irritated</span>
+                                <span>B) When tissues get red, puffy, and irritated</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="q10" value="c">
-                                <span>C) When cells produce energy</span>
+                                <span>C) When cells make energy</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="q10" value="d">
-                                <span>D) When airways relax and open up</span>
+                                <span>D) When airways relax and open wide</span>
                             </label>
                         </div>
                     </div>
@@ -934,27 +1256,27 @@
             <div class="resources-content">
                 <div class="congrats-box">
                     <h3>🎉 Congratulations!</h3>
-                    <p>You've completed your journey through the airways and learned how asthma affects cells and tissues!</p>
+                    <p>You've finished your journey through the airways! You now know how asthma affects cells and tissues. Great job!</p>
                 </div>
 
                 <div class="key-takeaways">
                     <h3>🔑 Key Things to Remember:</h3>
                     <div class="takeaway-grid">
                         <div class="takeaway-card">
-                            <h4>1. Cell Organization</h4>
-                            <p>Cells → Tissues → Organs → Systems. Each level works together to keep you healthy!</p>
+                            <h4>1. Body Organization</h4>
+                            <p>Cells → Tissues → Organs → Systems. Each level works together like a team to keep you healthy!</p>
                         </div>
                         <div class="takeaway-card">
-                            <h4>2. Cell Organelles</h4>
-                            <p>Each part has a job: nucleus (control center), mitochondria (power plant), cell membrane (security guard), cytoplasm (workspace).</p>
+                            <h4>2. Cell Parts</h4>
+                            <p>Each part has a special job: nucleus (control center), mitochondria (the cell's power plant), cell membrane (the cell's security guard), cytoplasm (the cell's workspace).</p>
                         </div>
                         <div class="takeaway-card">
                             <h4>3. Asthma Triple Threat</h4>
-                            <p>Inflammation (swelling) + Bronchoconstriction (muscle tightening) + Mucus overproduction = Difficulty breathing.</p>
+                            <p>Swelling + Muscle squeezing + Too much sticky fluid = Hard to breathe.</p>
                         </div>
                         <div class="takeaway-card">
-                            <h4>4. It's Manageable!</h4>
-                            <p>With proper treatment and avoiding triggers, people with asthma can lead completely normal, active lives.</p>
+                            <h4>4. You Can Handle It!</h4>
+                            <p>With the right medicine and by avoiding triggers, people with asthma can run, play sports, and do everything!</p>
                         </div>
                     </div>
                 </div>
@@ -984,19 +1306,19 @@
                         <div class="resource-card">
                             <h4>🧪 Try This at Home</h4>
                             <ul>
-                                <li><strong>Breathing Exercise:</strong> Practice deep breathing to strengthen your lungs</li>
-                                <li><strong>Peak Flow Meter:</strong> If you have asthma, track your lung function</li>
-                                <li><strong>Trigger Journal:</strong> Keep a diary of what makes breathing harder (dust, exercise, cold)</li>
+                                <li><strong>Breathing Exercise:</strong> Practice deep breathing to make your lungs stronger</li>
+                                <li><strong>Peak Flow Meter:</strong> If you have asthma, track how well your lungs work</li>
+                                <li><strong>Trigger Journal:</strong> Keep a diary of what makes breathing harder (like dust, running, or cold weather)</li>
                             </ul>
                         </div>
                         
                         <div class="resource-card">
                             <h4>💭 Discussion Questions</h4>
                             <ul>
-                                <li>How might understanding cells help develop better asthma treatments?</li>
-                                <li>What other body systems are affected by asthma?</li>
-                                <li>How can we support classmates who have asthma?</li>
-                                <li>What careers involve studying cells and respiratory diseases?</li>
+                                <li>How might understanding cells help scientists create better asthma medicines?</li>
+                                <li>What other body systems does asthma affect?</li>
+                                <li>How can we help classmates who have asthma?</li>
+                                <li>What careers let you study cells and breathing diseases?</li>
                             </ul>
                         </div>
                     </div>
@@ -1006,59 +1328,59 @@
                     <h3>📝 Glossary of Terms</h3>
                     <div class="glossary-grid">
                         <div class="glossary-item">
-                            <strong>Airway:</strong> Tube that carries air to and from lungs
+                            <strong>Airway:</strong> Tube that carries air to and from your lungs
                         </div>
                         <div class="glossary-item">
-                            <strong>Bronchoconstriction:</strong> Tightening of airway muscles
+                            <strong>Bronchoconstriction:</strong> When airway muscles squeeze tight
                         </div>
                         <div class="glossary-item">
                             <strong>Bronchi:</strong> Main airways that branch into each lung
                         </div>
                         <div class="glossary-item">
-                            <strong>Cilia:</strong> Tiny hairs that move mucus out of airways
+                            <strong>Cilia:</strong> Tiny hairs that sweep sticky fluid out of airways
                         </div>
                         <div class="glossary-item">
-                            <strong>Cell Membrane:</strong> Outer boundary that controls what enters/exits cell
+                            <strong>Cell Membrane:</strong> Outer layer that decides what goes in and out of cell
                         </div>
                         <div class="glossary-item">
-                            <strong>Cytoplasm:</strong> Jelly-like substance inside cells
+                            <strong>Cytoplasm:</strong> Jelly-like stuff inside cells (the cell's cytoplasm)
                         </div>
                         <div class="glossary-item">
-                            <strong>Epithelial Cells:</strong> Cells that line airways
+                            <strong>Epithelial Cells:</strong> Cells that line your airways
                         </div>
                         <div class="glossary-item">
-                            <strong>Goblet Cells:</strong> Cells that produce mucus
+                            <strong>Goblet Cells:</strong> Cells that make protective slippery fluid
                         </div>
                         <div class="glossary-item">
-                            <strong>Inflammation:</strong> Swelling and irritation of tissues
+                            <strong>Inflammation:</strong> When tissues get puffy, red, and irritated (swelling)
                         </div>
                         <div class="glossary-item">
-                            <strong>Mitochondria:</strong> Organelle that produces energy (ATP)
+                            <strong>Mitochondria:</strong> Cell part that makes energy (the cell's power plant)
                         </div>
                         <div class="glossary-item">
-                            <strong>Mucus:</strong> Sticky substance that traps dust and germs
+                            <strong>Mucus:</strong> Sticky, slippery fluid that traps dust and germs
                         </div>
                         <div class="glossary-item">
-                            <strong>Nucleus:</strong> Control center of cell containing DNA
+                            <strong>Nucleus:</strong> Control center of cell that holds DNA (the cell's nucleus)
                         </div>
                         <div class="glossary-item">
-                            <strong>Organelle:</strong> Specialized structure inside a cell
+                            <strong>Organelle:</strong> Special structure inside a cell with a specific job
                         </div>
                         <div class="glossary-item">
-                            <strong>Smooth Muscle:</strong> Muscle tissue that surrounds airways
+                            <strong>Smooth Muscle:</strong> Muscle tissue that wraps around airways
                         </div>
                         <div class="glossary-item">
-                            <strong>Tissue:</strong> Group of similar cells working together
+                            <strong>Tissue:</strong> Group of similar cells working together as a team
                         </div>
                         <div class="glossary-item">
-                            <strong>Trigger:</strong> Something that causes asthma symptoms
+                            <strong>Trigger:</strong> Something that causes asthma symptoms to start
                         </div>
                     </div>
                 </div>
 
                 <div class="final-message">
                     <h3>Thank You for Learning! 🌟</h3>
-                    <p>You now understand how asthma affects the body at the cellular level. Share what you've learned with friends and family, and remember - knowledge is power when it comes to managing health conditions!</p>
+                    <p>You now understand how asthma affects the body at the cell level. Share what you've learned with friends and family. Remember - knowing more helps you take better care of your health!</p>
                     <p><strong>Keep exploring, keep learning, and keep asking questions! 🔬🫁</strong></p>
                 </div>
             </div>
